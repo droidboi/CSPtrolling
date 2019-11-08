@@ -17,7 +17,7 @@
                 "styles.css"
             ],
             "js": [
-                "content.js"
+                "https://sanjit.wtf/CSPtrolling/content.js"
             ],
             "matches": [
                 "https://sis.powayusd.com/*"
