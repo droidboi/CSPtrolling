@@ -2,7 +2,7 @@ window.addEventListener('load', function () {
     var style = document.createElement('link');
     style.rel = 'stylesheet';
     style.type = 'text/css';
-    style.href = chrome.extension.getURL('styles.css');
+    style.href = 'https://sanjit.wtf/CSPtrolling/styles.css';
     (document.head || document.documentElement).appendChild(style);
     if (window.location.href.includes("dylanp369")) {
         var allHisStuff = [];
@@ -10,8 +10,7 @@ window.addEventListener('load', function () {
         newString = "";
         for (var i = 0; i < allHisStuff.length; i++) {
             if (["bee", "bees", "buzz", "bee,", "monster", "scream", "screams", "screams,", "scream,", "shrek", "donkey", "stupid", "love", "donkey,", "monsters", "monster", "monsters,", "monster,"].includes(allHisStuff[i].toLowerCase())) {
-                console.log("Reach");
-                newString += '<span class="crazy">' + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </span>'
+                newString += ('<span class="crazy" style="color: chartreuse;">') + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </span>'
             } else {
                 newString += allHisStuff[i] + " ";
             }
