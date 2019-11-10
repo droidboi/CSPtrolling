@@ -13,14 +13,14 @@
     },
     "content_scripts": [
         {
-            "css": [
-                "styles.css"
-            ],
             "js": [
                 "content.js"
             ],
             "matches": [
                 "https://dylanp369.github.io/prime/*"
+            ],
+            "web_accessible_resources": [
+                "styles.css"
             ]
         }
     ]

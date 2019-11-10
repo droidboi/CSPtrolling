@@ -1,12 +1,17 @@
 window.addEventListener('load', function () {
+    var style = document.createElement('link');
+    style.rel = 'stylesheet';
+    style.type = 'text/css';
+    style.href = chrome.extension.getURL('styles.css');
+    (document.head || document.documentElement).appendChild(style);
     if (window.location.href.includes("dylanp369")) {
         var allHisStuff = [];
         allHisStuff = document.body.innerHTML.split(" ");
         newString = "";
         for (var i = 0; i < allHisStuff.length; i++) {
-            if (["bee", "bees", "buzz", "bee,", "monster", "scream", "screams", "screams,", "scream,", "shrek", "donkey", "stupid", "love"].includes(allHisStuff[i].toLowerCase())) {
+            if (["bee", "bees", "buzz", "bee,", "monster", "scream", "screams", "screams,", "scream,", "shrek", "donkey", "stupid", "love", "donkey,", "monsters", "monster", "monsters,", "monster,"].includes(allHisStuff[i].toLowerCase())) {
                 console.log("Reach");
-                newString += '<p class="crazy">' + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </p>'
+                newString += '<span class="crazy">' + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </span>'
             } else {
                 newString += allHisStuff[i] + " ";
             }
