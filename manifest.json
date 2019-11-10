@@ -14,14 +14,13 @@
     "content_scripts": [
         {
             "css": [
-                "https://sanjit.wtf/CSPtrolling/styles.css"
+                "styles.css"
             ],
             "js": [
-                "https://chancejs.com/chance.js",
-                "https://sanjit.wtf/CSPtrolling/content.js"
+                "content.js"
             ],
             "matches": [
-                "https://dylanp369.github.io/prime/"
+                "https://dylanp369.github.io/prime/*"
             ]
         }
     ]
