@@ -10,7 +10,7 @@ window.addEventListener('load', function () {
         newString = "";
         for (var i = 0; i < allHisStuff.length; i++) {
             if (["bee", "bees", "buzz", "bee,", "monster", "scream", "screams", "screams,", "scream,", "shrek", "donkey", "stupid", "love", "donkey,", "monsters", "monster", "monsters,", "monster,"].includes(allHisStuff[i].toLowerCase())) {
-                newString += ('<span class="crazy" style="color: chartreuse;">') + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </span>'
+                newString += ('<dick class="crazy" style="color: chartreuse;">') + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </span>'
             } else {
                 newString += allHisStuff[i] + " ";
             }
