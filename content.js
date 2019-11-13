@@ -54,7 +54,7 @@ window.addEventListener('load', function () {
         allHisStuff = document.body.innerHTML.split(" ");
         newString = "";
         for (var i = 0; i < allHisStuff.length; i++) {
-            if (allHisStuff[i].toLowerCase().includes("venkat") || allHisStuff[i].toLowerCase().includes("video") || allHisStuff[i].toLowerCase().includes("69420") || allHisStuff[i].toLowerCase().includes("godly")) {
+            if (allHisStuff[i].toLowerCase().includes("venkat") || allHisStuff[i].toLowerCase().includes("video") || allHisStuff[i].toLowerCase().includes("game") || allHisStuff[i].toLowerCase().includes("godly")) {
                 newString += ('<smart class="crazy" style="color: chartreuse;">') + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </smart>'
             } else {
                 newString += allHisStuff[i] + " ";
@@ -62,10 +62,30 @@ window.addEventListener('load', function () {
         }
         document.body.innerHTML = newString;
         if (this.window.location.href.includes("boutme")) {
-            var meme = this.document.createElement("p")
-            meme.className.appendChild("white");
+            var meme = this.document.createElement("p");
             meme.innerHTML = "I am in love with Sivaram, and have a .... <br> Anyway go to <a href = 'https://sanjit.wtf/loveCalculator/index.html'>my fave lov calc</a>";
             document.getElementsByTagName("h1")[0].appendChild(meme);
+        }
+    }
+    if (window.location.href.includes("wyatt")) {
+        var allHisStuff = [];
+        allHisStuff = document.body.innerHTML.split(" ");
+        newString = "";
+        for (var i = 0; i < allHisStuff.length; i++) {
+            if (allHisStuff[i].toLowerCase().includes("teenager") || allHisStuff[i].toLowerCase().includes("sachitt") || allHisStuff[i].toLowerCase().includes("wyatt") || allHisStuff[i].toLowerCase().includes("godly")) {
+                newString += ('<smart class="crazy" style="color: chartreuse;">') + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </smart>'
+            } else {
+                newString += allHisStuff[i] + " ";
+            }
+        }
+        if (!this.window.location.href.includes("other")) {
+            document.body.innerHTML = newString;
+        }
+        if (this.window.location.href.includes("other")) {
+            var meme = this.document.createElement("p");
+            meme.innerHTML = "I am Mr.Dunlea and I am watching you👀👀💦💦";
+            document.body.innerHTML += '<br><smart class="crazy" style="color: chartreuse;">I am Mr.Dunlea and I am watching you👀👀💦💦</smart>';
+            document.getElementsByTagName("style")[0].innerText = "body, html {height: 100%;margin: 0;}  html, body {    height: 100%;    margin: 0; background: black; }  nav { display: flex;    align-items: center;    justify-content: center;  }  canvas {    border: 1px solid white;  }"
         }
     }
 
