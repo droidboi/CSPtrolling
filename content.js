@@ -9,7 +9,7 @@ window.addEventListener('load', function () {
         allHisStuff = document.body.innerHTML.split(" ");
         newString = "";
         for (var i = 0; i < allHisStuff.length; i++) {
-            if (["bee", "bees", "buzz", "bee,", "monster", "scream", "screams", "snake", "screams,", "scream,", "shrek", "donkey", "stupid", "love", "donkey,", "monsters", "monster", "monsters,", "monster,", "dylan", "dylan's", ">Dylan's", ">Dylan"].includes(allHisStuff[i].toLowerCase())) {
+            if (["bee", "bees", "buzz", "bee,", "monster", "scream", "screams", "snake", "screams,", "scream,", "shrek", "donkey", "stupid", "love", "donkey,", "monsters", "monster", "monsters,", "monster,", "dylan", "dylan's"].includes(allHisStuff[i].toLowerCase())) {
                 newString += ('<dick class="crazy" style="color: chartreuse;">') + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </dick>'
             } else {
                 newString += allHisStuff[i] + " ";
