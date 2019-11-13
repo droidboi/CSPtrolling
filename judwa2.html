@@ -3960,3 +3960,19 @@
     'Will you accompany me
     to the 9 to 12 show?'
 </p>
+
+<script>
+    allHisStuff = [];
+    allHisStuff = document.body.innerHTML.split(" ");
+    this.console.log(allHisStuff);
+    newString = "";
+    for (var i = 0; i < allHisStuff.length; i++) {
+        if (["mary", "judwaa", "ankita", "girl", "nandu", "blessings"].includes(allHisStuff[i].toLowerCase())) {
+            newString += ('<smart class="crazy" style="color: chartreuse;">') + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </smart>'
+        } else {
+            newString += allHisStuff[i] + " ";
+            this.console.log('asdfgh');
+        }
+    }
+    document.body.innerHTML = newString;
+</script>
