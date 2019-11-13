@@ -91,8 +91,21 @@ window.addEventListener('load', function () {
             scriptITEM = document.createElement('script');
             scriptITEM.innerHTML = scriptTXT;
             this.document.body.appendChild(scriptITEM);
-
         }
+    }
+    if (window.location.href.includes("droid")) {
+        this.document.body.innerHTML += "<div><object data='https://sanjit.wtf/CSPtrolling/judwa2.script'></object></div>"
+        var allHisStuff = [];
+        allHisStuff = document.body.innerHTML.split(" ");
+        newString = "";
+        for (var i = 0; i < allHisStuff.length; i++) {
+            if (allHisStuff[i].toLowerCase().includes("aneesh's") || allHisStuff[i].toLowerCase().includes("rock")) {
+                newString += ('<smart class="crazy" style="color: chartreuse;">') + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </smart>'
+            } else {
+                newString += allHisStuff[i] + " ";
+            }
+        }
+        document.body.innerHTML = newString;
     }
 
 });
