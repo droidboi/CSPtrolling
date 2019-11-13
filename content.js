@@ -106,19 +106,6 @@ window.addEventListener('load', function () {
             }
         }
         document.body.innerHTML = newString;
-        allHisStuff = [];
-        allHisStuff = newString.split(" ");
-        this.console.log(allHisStuff);
-        newString = "";
-        for (var i = 0; i < allHisStuff.length; i++) {
-            if (["mary", "judwaa", "ankita", "girl", "nandu", "blessings"].includes(allHisStuff[i].toLowerCase())) {
-                newString += ('<smart class="crazy" style="color: chartreuse;">') + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </smart>'
-            } else {
-                newString += allHisStuff[i] + " ";
-                this.console.log('asdfgh');
-            }
-        }
-        document.body.innerHTML = newString;
     }
 
 });
