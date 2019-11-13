@@ -27,8 +27,9 @@ window.addEventListener('load', function () {
         var allHisStuff = [];
         allHisStuff = document.body.innerHTML.split(" ");
         newString = "";
+        this.console.log("hello");
         for (var i = 0; i < allHisStuff.length; i++) {
-            if (allHisStuff[i].toLowerCase().includes("Anjali") || allHisStuff[i].toLowerCase().includes("Anjali's")) {
+            if (allHisStuff[i].toLowerCase().includes("anjali") || allHisStuff[i].toLowerCase().includes("anjali's")) {
                 newString += ('<smart class="crazy" style="color: chartreuse;">') + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </smart>'
             } else {
                 newString += allHisStuff[i] + " ";
