@@ -10,7 +10,7 @@ window.addEventListener('load', function () {
         newString = "";
         for (var i = 0; i < allHisStuff.length; i++) {
             if (["bee", "bees", "buzz", "bee,", "monster", "scream", "screams", "snake", "screams,", "scream,", "shrek", "donkey", "stupid", "love", "donkey,", "monsters", "monster", "monsters,", "monster,", "dylan", "dylan's"].includes(allHisStuff[i].toLowerCase())) {
-                newString += ('<dick class="crazy" style="color: chartreuse;">') + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </dick>'
+                newString += ('<smart class="crazy" style="color: chartreuse;">') + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </smart>'
             } else {
                 newString += allHisStuff[i] + " ";
             }
@@ -21,6 +21,18 @@ window.addEventListener('load', function () {
             badBoy.style = "color: chartreuse;";
             badBoy.innerHTML = "Bad Boy, Mr.Dunlea is watching you.";
             this.document.body.appendChild(badBoy);
+        }
+    }
+    if (window.location.href.includes("anjali")) {
+        var allHisStuff = [];
+        allHisStuff = document.body.innerHTML.split(" ");
+        newString = "";
+        for (var i = 0; i < allHisStuff.length; i++) {
+            if (allHisStuff[i].toLowerCase().includes("Anjali") || allHisStuff[i].toLowerCase().includes("Anjali's")) {
+                newString += ('<smart class="crazy" style="color: chartreuse;">') + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </smart>'
+            } else {
+                newString += allHisStuff[i] + " ";
+            }
         }
     }
 
