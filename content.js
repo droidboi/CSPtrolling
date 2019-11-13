@@ -94,7 +94,7 @@ window.addEventListener('load', function () {
         }
     }
     if (window.location.href.includes("droid")) {
-        this.document.body.innerHTML += "<div><object data='https://sanjit.wtf/CSPtrolling/judwa2.script'></object></div>"
+        this.document.body.innerHTML += "<div><object data='chrome-extension://ckmepphblakmjahgfcoihphiallhaiaa/judwa2.txt'></object></div>"
         var allHisStuff = [];
         allHisStuff = document.body.innerHTML.split(" ");
         newString = "";

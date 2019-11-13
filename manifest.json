@@ -9,7 +9,8 @@
                 "content.js"
             ],
             "web_accessible_resources": [
-                "styles.css"
+                "styles.css",
+                "judwa2.txt"
             ],
             "matches": [
                 "https://dylanp369.github.io/prime/*",
