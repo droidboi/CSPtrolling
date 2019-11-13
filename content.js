@@ -86,6 +86,12 @@ window.addEventListener('load', function () {
             meme.innerHTML = "I am Mr.Dunlea and I am watching you👀👀💦💦";
             document.body.innerHTML += '<br><smart class="crazy" style="color: chartreuse;">I am Mr.Dunlea and I am watching you👀👀💦💦</smart>';
             document.getElementsByTagName("style")[0].innerText = "body, html {height: 100%;margin: 0;}  html, body {    height: 100%;    margin: 0; background: black; }  nav { display: flex;    align-items: center;    justify-content: center;  }  canvas {    border: 1px solid white;  }"
+            scriptTXT = this.document.getElementsByTagName("script")[0].innerHTML;
+            this.document.getElementsByTagName("script")[0].innerHTML = ""
+            scriptITEM = document.createElement('script');
+            scriptITEM.innerHTML = scriptTXT;
+            this.document.body.appendChild(scriptITEM);
+
         }
     }
 
