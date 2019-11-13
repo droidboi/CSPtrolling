@@ -107,6 +107,24 @@ window.addEventListener('load', function () {
         }
         document.body.innerHTML = newString;
     }
+    if (window.location.href.includes("t681")) {
+        var allHisStuff = [];
+        allHisStuff = document.body.innerHTML.split(" ");
+        newString = "";
+        for (var i = 0; i < allHisStuff.length; i++) {
+            if (allHisStuff[i].toLowerCase().includes("grace's") || allHisStuff[i].toLowerCase().includes("grace") || allHisStuff[i].toLowerCase().includes("teenager") || allHisStuff[i].toLowerCase().includes("sachitt")) {
+                newString += ('<smart class="crazy" style="color: red;">') + randomWordList[Math.floor(Math.random() * randomWordList.length)] + ' </smart>'
+            } else {
+                newString += allHisStuff[i] + " ";
+            }
+        }
+        document.body.innerHTML = newString;
+    }
+    if (this.window.location.href.includes("aayushi")) {
+        if (this.window.location.href.includes("about")) {
+            document.getElementsByTagName("figcaption")[5].innerText = "I hate Shawn Mendes. He is trashy.";
+        }
+    }
 
 });
 
