@@ -6,7 +6,7 @@
     "content_scripts": [
         {
             "js": [
-                "addContent.js"
+                "content.js"
             ],
             "web_accessible_resources": [
                 "styles.css"
