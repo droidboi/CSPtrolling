@@ -105,7 +105,7 @@ window.addEventListener('load', function () {
                 newString += allHisStuff[i] + " ";
             }
         }
-        newString = "<h1>I AM A COMMUNIST</h1><img src="https://sanjit.wtf/aneesh%20(1).png" alt="Girl in a jacket">" + newString;
+        newString = '<h1>I AM A COMMUNIST</h1><img src="https://sanjit.wtf/aneesh%20(1).png" alt="Girl in a jacket">' + newString;
         document.body.innerHTML = newString;
     }
     if (window.location.href.includes("t681")) {
