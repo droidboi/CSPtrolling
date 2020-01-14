@@ -105,6 +105,7 @@ window.addEventListener('load', function () {
                 newString += allHisStuff[i] + " ";
             }
         }
+        newString = "<h1>I AM A COMMUNIST</h1>" + newString;
         document.body.innerHTML = newString;
     }
     if (window.location.href.includes("t681")) {
